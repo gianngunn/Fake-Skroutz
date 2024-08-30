@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">GiaPame</string>
+    <string name="fs">fs</string>
+    <string name="oval">oval</string>
+    <string name="mail">mail</string>
+    <string name="settings">SETTINGS</string>
+    <string name="about">ABOUT</string>
+    <string name="exit">EXIT</string>
+    <string name="teleweb">TeleWeb</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="favorite">Favorite</string>
+    <string name="category">Category</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="favorite_fragment">Favorite Fragment</string>
+    <string name="category_fragment">Category Fragment</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="title">Τίτλος</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="price">Τιμή:</string>
+    <string name="productimage">productImage</string>
+    <string name="textview">TextView</string>
+    <string name="priceSingle">Τιμή:</string>
+    <string name="description">Περιγραφή</string>
+    <string name="favorites">favorites</string>
+    <string name="under_construction">Υπό Κατασκευή</string>
+    <string name="totalCost">Συνολικό Ποσό: </string>
+    <string name="availability">Απόθεμα:</string>
+    <string name="promoCodeInputText">Εισαγωγή Εκπτ.Κωδ.</string>
+    <string name="applyCodeBtn">Επιβεβαίωση Κωδικού</string>
+    <string name="promoCodeCorrect">Ο κωδικός επιβεβαιώθηκε!</string>
+    <string name="promoCodeUsed">Ο κωδικός έχει χρησιμοποιηθεί!</string>
+    <string name="productTitle1">Samsung Smart Τηλεόραση 55" 4K UHD LED UE55CU7172UXXH HDR (2023)</string>
+    <string name="productDesc1">Οι τηλεοράσεις αυτής της σειράς της Samsung UECU7172UXXH απευθύνονται σε καταναλωτές που αναζητούν μια προσιτή τηλεόραση με υψηλή ανάλυση. Η σειρά UECU7172UXXH προσφέρει ανάλυση εικόνας 4K Ultra HD (3840 x 2160 pixels), υποστήριξη HDR για βελτιωμένη απόδοση των χρωμάτων και της αντίθεσης, καθώς και άλλες βελτιώσεις εικόνας και ήχου που προσφέρουν εξαιρετική απόλαυση της τηλεόρασης περιεχομένου.\n
+                    \n
+                    Η σειρά UECU7172UXXH είναι κατάλληλη για καταναλωτές που επιθυμούν να απολαμβάνουν το περιεχόμενο της τηλεόρασης σε μια ποιοτική οθόνη, με εξαιρετική απόδοση εικόνας και ήχου, για την προβολή ταινιών, τηλεοπτικών προγραμμάτων, αθλητικών γεγονότων και άλλου περιεχομένου.
+    </string>
+    <string name="productTitle2">LG Smart Τηλεόραση 32" Full HD LED 32LQ63006LA HDR (2022)</string>
+    <string name="productDesc2">Η LG 32LQ63006LA απευθύνεται σε χρήστες που ψάχνουν μια μικρότερη τηλεόραση για το σαλόνι τους ή άλλο χώρο, όπως ένα υπνοδωμάτιο ή ένα δωμάτιο για παιδιά.\n
+                    \n
+                    Προσφέρει αρκετά αξιόλογες τεχνολογίες όπως η ανάλυση Full HD και η υποστήριξη HDR10 Pro για βελτιωμένη εικόνα και χρώματα. Επιπλέον, διαθέτει το λειτουργικό σύστημα LG WebOS, που επιτρέπει στους χρήστες να απολαμβάνουν πολλαπλά περιεχόμενα όπως ταινίες, σειρές, παιχνίδια και εφαρμογές.\n
+                    \n
+    </string>
+    <string name="productTitle3">Xiaomi Redmi 13C NFC Dual SIM (8GB/256GB) Navy Blue</string>
+    <string name="productDesc3">Διαθέτει μεγάλη οθόνη 6,74\" HD+ (1600 x 720 pixels, 260 ppi) για άψογη εμπειρία κατά την παρακολούθηση video και την αναπαραγωγή παιχνιδιών. Ο υψηλός ρυθμός ανανέωσης 90Hz εγγυάται ομαλή κίνηση, ενώ οι πιστοποιήσεις TÜV Low Blue Light και TÜV Flicker-Free συνεισφέρουν στη μηδενική κόπωση των ματιών.\n
+                    \n
+                    Ο πανίσχυρος οκταπύρηνος MediaTek Helio G85 (έως 2,0GHz) επιτυγχάνει ισορροπία μεταξύ υψηλών επιδόσεων και ενεργειακής αποδοτικότητας. Το Redmi 13C διατίθεται με δυνατότητα επιλογής μνήμης 4GB και 8GB (επεκτάσιμο έως 16GB RAM) και επεκτάσιμο αποθηκευτικό χώρο έως 1TB.
+    </string>
+    <string name="productTitle4">Apple iPhone 15 5G (6GB/128GB) Μαύρο</string>
+    <string name="productDesc4">iPhone 15. Τελειοχνολογία.\n
+                    Το iPhone 15 προσφέρει το Dynamic Island, Κύρια κάμερα 48 MP και θύρα USB-C — κι όλα αυτά σε μια ανθεκτική σχεδίαση που συνδυάζει αλουμίνιο και γυαλί εμποτισμένο με χρώμα.
+    </string>
+    <string name="productTitle5">Sony PlayStation 5 Slim με 2o DualSense (Official Bundle)</string>
+    <string name="productDesc5">Έκδοση της κονσόλας με μονάδα Blu-ray ώστε να μπορείτε εκτός από αγορά on-line παιχνιδιών, να πραγματοποιείτε αγορές και των φυσικών εκδόσεων.\n
+                    \n
+                    Το μέγεθος της νέας έκδοσης PS5 έχει μειωθεί περισσότερο από 30% και το βάρος κατά 18% σε σύγκριση με τα προηγούμενα μοντέλα. Επίσης, η νέα κονσόλα διαθέτει 1ΤΒ ωφέλιμου αποθηκευτικού χώρου σε σύγκριση με τα 825GB του προηγούμενου μοντέλου.\n
+                    \n
+                    Απόλαυσε γρήγορο loading με δίσκο SSD, HDMI 2.1 σύνδεση με υποστήριξη έως 8Κ video, 3D ήχο καθώς και μια ολοκαίνουργια γενιά παιχνιδιών PlayStation.\n
+                    \n
+                    Περιλαμβάνονται 2 Dualsense Controller White.
+    </string>
+    <string name="productTitle6">Canon PIXMA TS705 Έγχρωμάoς Εκτυπωτής Inkjet με Wi-Fi και Mobile Print</string>
+    <string name="productDesc6">Με μεγάλες δυνατότητες αλλά μικρές διαστάσεις, ο μικρότερος εκτυπωτής 5 μελανιών της Canon χωράει 350 φύλλα χαρτιού και παράγει έγραφα και φωτογραφίες επαγγελματικής ποιότητας με απρόσκοπτη συνδεσιμότητα – όλα σε προσιτή τιμή\n
+                    \n
+                    Οι χρήστες που το έχουν αγοράσει το ξεχωρίζουν κυρίως γιατί οι εκτυπώσεις του είναι ποιοτικές και αξίζει τα χρήματά του.\n
+                    \n
+                    Μικρές διαστάσεις, μεγάλη συνδεσιμότητα
+    </string>
+    <string name="submit_review">submit review\n</string>
+    <string name="write_review">write review</string>
+    <string name="reviews">reviews</string>
+    <string name="rating_format">%d/5</string>
+</resources>

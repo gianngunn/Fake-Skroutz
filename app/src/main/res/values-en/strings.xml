@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GiaPame</string>
+    <string name="fs">fs</string>
+    <string name="oval">oval</string>
+    <string name="mail">mail</string>
+    <string name="settings">SETTINGS</string>
+    <string name="about">ABOUT</string>
+    <string name="exit">EXIT</string>
+    <string name="teleweb">TeleWeb</string>
+    <string name="profile">Profile</string>
+    <string name="cart">Cart</string>
+    <string name="favorite">Favorite</string>
+    <string name="category">Category</string>
+    <string name="home">Home</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="profile_fragment">Profile Fragment</string>
+    <string name="favorite_fragment">Favorite Fragment</string>
+    <string name="category_fragment">Category Fragment</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="cart_fragment">Cart Fragment</string>
+    <string name="title">Title</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="price">Price:</string>
+    <string name="productimage">productImage</string>
+    <string name="textview">TextView</string>
+    <string name="priceSingle">Price:</string>
+    <string name="description">Description</string>
+    <string name="favorites">favorites</string>
+    <string name="under_construction">Under Construction</string>
+    <string name="totalCost">Total Price: </string>
+    <string name="availability">availability:</string>
+    <string name="promoCodeInputText">Enter Promo Code</string>
+    <string name="applyCodeBtn">Apply Code</string>
+    <string name="promoCodeCorrect">Promo code was correct!</string>
+    <string name="promoCodeUsed">Promo code is used!</string>
+    <string name="productTitle1">Samsung Smart TV 55" 4K UHD LED UE55CU7172UXXH HDR (2023)</string>
+    <string name="productDesc1">The televisions of this Samsung UECU7172UXXH series are aimed at consumers looking for an affordable TV with high resolution. The UECU7172UXXH series offers 4K Ultra HD (3840 x 2160 pixels) picture resolution, HDR support for improved colour and contrast performance, as well as other image and sound enhancements that provide an excellent TV content enjoyment.
+
+The UECU7172UXXH series is suitable for consumers who want to enjoy TV content on a quality screen, with excellent picture and sound performance, for watching movies, TV shows, sports events, and other content.
+    </string>
+    <string name="productTitle2">LG Smart TV 32" Full HD LED 32LQ63006LA HDR (2022)</string>
+    <string name="productDesc2">The LG 32LQ63006LA is aimed at users looking for a smaller TV for their living room or another space, such as a bedroom or a children\'s room.
+
+It offers quite remarkable technologies such as Full HD resolution and HDR10 Pro support for improved picture and colors. Additionally, it features the LG WebOS operating system, allowing users to enjoy multiple contents like movies, series, games, and apps.
+
+Overall, it is aimed at those seeking an affordable smaller-sized TV with good picture technologies and smart TV functions.
+    </string>
+    <string name="productTitle3">Xiaomi Redmi 13C NFC Dual SIM (8GB/256GB) Navy Blue</string>
+    <string name="productDesc3">The Redmi 13C stands out for its sleek, sophisticated design, and with a thickness of just 8.09 millimeters, it is also extremely comfortable to hold and durable.
+
+It features a large 6.74" HD+ display (1600 x 720 pixels, 260 ppi) for a flawless video watching and gaming experience. The high refresh rate of 90Hz ensures smooth motion, while the TÜV Low Blue Light and TÜV Flicker-Free certifications contribute to zero eye strain.
+
+The powerful octa-core MediaTek Helio G85 (up to 2.0GHz) achieves a balance between high performance and energy efficiency. The Redmi 13C is available with a choice of 4GB and 8GB memory (expandable up to 16GB RAM) and expandable storage up to 1TB.
+
+The device features a 50MP AI main camera (with new fun Film Camera style filters) and a 2MP Macro camera. The 8MP selfie camera has an upgraded soft lighting ring, allowing for stunning selfies. The large 5000mAh battery (up to 23 hours of video streaming) and support for 18W fast charging are sufficient to eliminate the worry of charging.
+    </string>
+    <string name="productTitle4">Apple iPhone 15 5G (6GB/128GB) Black</string>
+    <string name="productDesc4">iPhone 15. Perfect Technology.
+
+The iPhone 15 offers the Dynamic Island, a 48 MP Main Camera, and a USB-C port — all in a durable design that combines aluminum and color-infused glass.
+    </string>
+    <string name="productTitle5">Sony PlayStation 5 Slim with 2nd DualSense (Official Bundle)</string>
+    <string name="productDesc5">Version of the console with a Blu-ray drive so that in addition to buying games online, you can also buy the physical versions.
+ The size of the new PS5 version has been reduced by more than 30% and the weight by 18% compared to previous models. Also, the new console has 1TB of usable storage compared to the previous model\'s 825GB
+ Enjoy fast loading with SSD disk, HDMI 2.1 connection with support up to 8K video, 3D sound and a brand new generation of PlayStation games.
+ 2 Dualsense Controller White included.</string>
+    <string name="productTitle6">Canon PIXMA TS705 Color Inkjet Printer with Wi-Fi and Mobile Print</string>
+    <string name="productDesc6">Big on features but small in size, Canon\'s smallest 5-ink printer holds 350 sheets of paper and produces professional-quality documents and photos with seamless connectivity – all at an affordable price.
+ Users who have bought it single it out mainly because its prints are quality and it is worth its money.
+ Small dimensions, great connectivity.
+    </string>
+    <string name="submit_review">submit review\n</string>
+    <string name="write_review">write review</string>
+    <string name="reviews">reviews</string>
+    <string name="rating_format">%d/5</string>
+</resources>
