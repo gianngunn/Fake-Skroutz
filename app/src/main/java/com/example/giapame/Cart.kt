@@ -20,6 +20,7 @@ class Cart : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: CartAdapter
+    private lateinit var reviewDao: ReviewDao
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -32,7 +33,8 @@ class Cart : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(context)
 
         val cartList = Constants.getCartItems()
-        adapter = CartAdapter(cartList)
+        reviewDao = ReviewDao(ReviewDataBaseHelper(requireContext()))
+        adapter = CartAdapter(cartList, reviewDao)
         recyclerView.adapter = adapter
 
         adapter.onItemClick = { homeProductViewModel ->

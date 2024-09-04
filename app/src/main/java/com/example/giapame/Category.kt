@@ -18,6 +18,7 @@ class Category : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: CategoryAdapter
     private lateinit var categorySpinner: Spinner
+    private lateinit var reviewDao: ReviewDao
     private val categories = listOf("TV", "SMARTPHONE", "CONSOLE", "PRINTER")
     //private lateinit var productList : ArrayList<Products>
     // Inflate the layout for this fragment
@@ -57,7 +58,9 @@ class Category : Fragment() {
             ) {
                 val category = parent?.getItemAtPosition(position) as String
                 var selectedCategoryProducts = productList.filter { it.productCategory == category } as ArrayList<HomeProductViewModel>
-                adapter = CategoryAdapter(selectedCategoryProducts)
+                reviewDao = ReviewDao(ReviewDataBaseHelper(requireContext()))
+
+                adapter = CategoryAdapter(selectedCategoryProducts, reviewDao)
                 recyclerView.adapter = adapter
                 adapter.onItemClick = { homeProductViewModel ->
                     val fragment = SingleProduct()

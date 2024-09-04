@@ -13,6 +13,8 @@ class Favorite : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: FavoriteAdapter
     private lateinit var noFavoritesTextView: TextView
+    private lateinit var reviewDao: ReviewDao
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,8 +28,8 @@ class Favorite : Fragment() {
         noFavoritesTextView = view.findViewById(R.id.no_favorites_text_view)
 
         val favoriteList=Constants.getFavoriteData()
-
-        adapter = FavoriteAdapter(favoriteList)
+        reviewDao = ReviewDao(ReviewDataBaseHelper(requireContext()))
+        adapter = FavoriteAdapter(favoriteList, reviewDao)
         recyclerView.adapter = adapter
         if (favoriteList.isEmpty()) {
             recyclerView.visibility = View.GONE

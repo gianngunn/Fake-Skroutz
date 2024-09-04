@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class FavoriteAdapter(private val favoriteList: ArrayList<HomeProductViewModel>) : RecyclerView.Adapter<FavoriteAdapter.ViewHolder>() {
+class FavoriteAdapter(private val favoriteList: ArrayList<HomeProductViewModel>, private val reviewDao: ReviewDao) : RecyclerView.Adapter<FavoriteAdapter.ViewHolder>() {
     var onItemClick: ((HomeProductViewModel) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -30,6 +30,13 @@ class FavoriteAdapter(private val favoriteList: ArrayList<HomeProductViewModel>)
         //sets the text to the textview from our itemHolder class
         holder.textView2.text = homeProductViewModel.productPrice
 
+        var ratingNumber = reviewDao.getReviewsTotalRate(homeProductViewModel.productTitle)
+        if (ratingNumber == 0){
+            holder.textView3.text = "N/A"
+        }else{
+            holder.textView3.text = ratingNumber.toString()
+        }
+
         holder.itemView.setOnClickListener {
             onItemClick?.invoke(homeProductViewModel)
         }
@@ -43,5 +50,6 @@ class FavoriteAdapter(private val favoriteList: ArrayList<HomeProductViewModel>)
         val imageView: ImageView = itemView.findViewById(R.id.productIcon)
         val textView1: TextView = itemView.findViewById(R.id.productTitle)
         val textView2: TextView = itemView.findViewById(R.id.productPrice)
+        val textView3: TextView = itemView.findViewById(R.id.productRating)
     }
 }

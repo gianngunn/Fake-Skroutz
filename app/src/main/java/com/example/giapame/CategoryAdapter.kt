@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 
-class CategoryAdapter(private val productList: ArrayList<HomeProductViewModel>) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
+class CategoryAdapter(private val productList: ArrayList<HomeProductViewModel>, private val reviewDao: ReviewDao) : RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
     //ArrayList
     var onItemClick : ((HomeProductViewModel) -> Unit)? = null
     //create new views
@@ -34,6 +34,13 @@ class CategoryAdapter(private val productList: ArrayList<HomeProductViewModel>) 
         //sets the text to the textview from our itemHolder class
         holder.textView2.text = homeProductViewModel.productPrice
 
+        var ratingNumber = reviewDao.getReviewsTotalRate(homeProductViewModel.productTitle)
+        if (ratingNumber == 0){
+            holder.textView3.text = "N/A"
+        }else{
+            holder.textView3.text = ratingNumber.toString()
+        }
+
         holder.itemView.setOnClickListener{
             onItemClick?.invoke(homeProductViewModel)
         }
@@ -50,6 +57,7 @@ class CategoryAdapter(private val productList: ArrayList<HomeProductViewModel>) 
         val imageView: ImageView = itemView.findViewById(R.id.productIcon)
         val textView1: TextView = itemView.findViewById(R.id.productTitle)
         val textView2: TextView = itemView.findViewById(R.id.productPrice)
+        val textView3: TextView = itemView.findViewById(R.id.productRating)
     }
 
 }
