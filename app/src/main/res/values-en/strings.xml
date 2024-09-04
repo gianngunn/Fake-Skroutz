@@ -72,8 +72,8 @@ The iPhone 15 offers the Dynamic Island, a 48 MP Main Camera, and a USB-C port â
  Users who have bought it single it out mainly because its prints are quality and it is worth its money.
  Small dimensions, great connectivity.
     </string>
-    <string name="submit_review">submit review\n</string>
-    <string name="write_review">write review</string>
+    <string name="submit_review">Submit your review\n</string>
+    <string name="write_review">Write your review</string>
     <string name="reviews">reviews</string>
     <string name="rating_format">%d/5</string>
 </resources>

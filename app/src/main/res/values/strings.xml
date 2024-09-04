@@ -71,8 +71,8 @@
                     \n
                     Μικρές διαστάσεις, μεγάλη συνδεσιμότητα
     </string>
-    <string name="submit_review">submit review\n</string>
-    <string name="write_review">write review</string>
-    <string name="reviews">reviews</string>
+    <string name="submit_review">Καταχώρηση Αξιολόγησης\n</string>
+    <string name="write_review">Γράψτε την αξιολόγηση σας</string>
+    <string name="reviews">Αξιολογήσεις</string>
     <string name="rating_format">%d/5</string>
 </resources>
