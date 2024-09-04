@@ -7,8 +7,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import android.view.View
+import androidx.core.content.ContentProviderCompat.requireContext
 
-class HomeAdapter(private var productList: ArrayList<HomeProductViewModel>) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
+class HomeAdapter(private var productList: ArrayList<HomeProductViewModel>, private val reviewDao: ReviewDao) : RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
                                         //ArrayList
     var onItemClick : ((HomeProductViewModel) -> Unit)? = null
     //create new views
@@ -41,7 +42,13 @@ class HomeAdapter(private var productList: ArrayList<HomeProductViewModel>) : Re
         holder.textView2.text = homeProductViewModel.productPrice
 
         //sets the text to the textview from our itemHolder class
-        //holder.textView3.text = homeProductViewModel.productAvailability.toString()
+       var ratingNumber = reviewDao.getReviewsTotalRate(homeProductViewModel.productTitle)
+        if (ratingNumber == 0){
+            holder.textView3.text = "N/A"
+       }else{
+            holder.textView3.text = ratingNumber.toString()
+       }
+
 
         holder.itemView.setOnClickListener{
             onItemClick?.invoke(homeProductViewModel)
@@ -59,6 +66,7 @@ class HomeAdapter(private var productList: ArrayList<HomeProductViewModel>) : Re
         val imageView: ImageView = itemView.findViewById(R.id.productIcon)
         val textView1: TextView = itemView.findViewById(R.id.productTitle)
         val textView2: TextView = itemView.findViewById(R.id.productPrice)
-        //val textView3: TextView = itemView.findViewById(R.id.productAvailability)
+        val textView3: TextView = itemView.findViewById(R.id.productRating)
+    //val textView3: TextView = itemView.findViewById(R.id.productAvailability)
     }
 }

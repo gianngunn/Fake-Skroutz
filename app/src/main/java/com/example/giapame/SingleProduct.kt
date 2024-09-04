@@ -99,14 +99,14 @@ class SingleProduct : Fragment() {
 
             val reviewEditText = view.findViewById<EditText>(R.id.review_edit_text)
             val ratingBar = view.findViewById<RatingBar>(R.id.rating_bar)
-            val sumbitReviewButton = view.findViewById<Button>(R.id.submit_review_button)
+            val submitReviewButton = view.findViewById<Button>(R.id.submit_review_button)
             val reviewsListView = view.findViewById<ListView>(R.id.reviews_list_view)
             // Retrieve reviews
             val reviews = reviewDao.getReviewsForProduct(homeProductViewModel.productTitle)
             val reviewAdapter = ReviewAdapter(reviews)
             reviewsListView.adapter = reviewAdapter
 
-            sumbitReviewButton.setOnClickListener{
+            submitReviewButton.setOnClickListener{
                 val reviewText = reviewEditText.text.toString()
                 val rating = ratingBar.rating.toInt()
                 reviewDao.addReview(homeProductViewModel.productTitle, reviewText, rating)

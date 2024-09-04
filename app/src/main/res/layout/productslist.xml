@@ -71,30 +71,30 @@
                 app:layout_constraintStart_toEndOf="@+id/productIcon"
                 app:layout_constraintTop_toBottomOf="@+id/productTitle" />
 
-           <!-- <TextView
+            <TextView
                 android:id="@+id/textView2"
-                android:layout_width="58dp"
+                android:layout_width="wrap_content"
                 android:layout_height="23dp"
-                android:layout_marginStart="216dp"
+                android:layout_marginStart="204dp"
                 android:layout_marginTop="4dp"
-                android:text="@string/availability"
+                android:text="@string/rating"
                 android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/productIcon"
                 app:layout_constraintTop_toBottomOf="@+id/productTitle" />
 
             <TextView
-                android:id="@+id/productAvailability"
+                android:id="@+id/productRating"
                 android:layout_width="wrap_content"
                 android:layout_height="22dp"
                 android:layout_marginTop="5dp"
-                android:text="@string/availability"
+                android:text="@string/rating"
                 android:textSize="12sp"
                 android:textStyle="normal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toBottomOf="@+id/productTitle" /> -->
+                app:layout_constraintTop_toBottomOf="@+id/productTitle" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

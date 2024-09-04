@@ -17,6 +17,7 @@ class Home : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: HomeAdapter
     private lateinit var searchView: SearchView
+    private lateinit var reviewDao: ReviewDao
     //private lateinit var productList : ArrayList<Products>
     // Inflate the layout for this fragment
 
@@ -27,10 +28,11 @@ class Home : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
-
+        reviewDao = ReviewDao(ReviewDataBaseHelper(requireContext()))
         recyclerView = view.findViewById(R.id.home_recycler_view)
         recyclerView.layoutManager = LinearLayoutManager(context)
         searchView = view.findViewById(R.id.product_search_view)
+
 
         // Create a list of HomeProductViewModel objects
 //        val productList = listOf(
@@ -41,7 +43,9 @@ class Home : Fragment() {
         val productList=Constants.getProductData()
         //productList = ArrayList()
         //productList.add(HomeProductViewModel(R.mipmap.product_tv_1, "Samsung Smart Τηλεόραση 55\" 4K UHD LED UE55CU7172UXXH HDR (2023)", "Price: $394.79"))
-        adapter = HomeAdapter(productList)
+        reviewDao = ReviewDao(ReviewDataBaseHelper(requireContext()))
+        adapter = HomeAdapter(productList, reviewDao)
+
         recyclerView.adapter = adapter
 
         adapter.onItemClick = { homeProductViewModel ->

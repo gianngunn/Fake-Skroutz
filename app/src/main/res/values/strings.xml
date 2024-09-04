@@ -75,4 +75,5 @@
     <string name="write_review">Γράψτε την αξιολόγηση σας</string>
     <string name="reviews">Αξιολογήσεις</string>
     <string name="rating_format">%d/5</string>
+    <string name="rating">Βαθμολογία:</string>
 </resources>
